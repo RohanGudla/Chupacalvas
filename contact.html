@@ -39,7 +39,8 @@
                     <div class="mb-3"><label class="form-label" for="subject">Subject</label><input class="form-control item" type="text" id="subject"></div>
                     <div class="mb-3"><label class="form-label" for="email">Email</label><input class="form-control item" type="email" id="email"></div>
                     <div class="mb-3"><label class="form-label" for="message">Message</label><textarea class="form-control item" id="message"></textarea></div>
-                    <div class="mb-3"><button class="btn btn-primary btn-lg d-block w-100" type="submit">Submit Form</button></div>
+                    <div class="mb-3"><button class="btn btn-primary btn-lg d-block w-100" onclick="a()" type="submit">Submit Form</button></div>
+                    <p style="font-size:25px;font-family:ariel;color:black;" id="a"></p>
                 </form>
             </div>
         </section>
@@ -50,6 +51,12 @@
             <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
         </div>
     </footer>
+    <script>
+        function a(){
+                        document.getElementById("a").innerHTML = "Form has been submitted";
+        }
+
+    </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/theme.js"></script>
